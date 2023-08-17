@@ -1,0 +1,11 @@
+def score(n):
+    if n > 40:
+        return n
+    else:
+        return 40
+
+
+li = [0] * 5
+for i in range(5):
+    li[i] = score(int(input()))
+print(sum(li) // 5)

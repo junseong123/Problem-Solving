@@ -1,0 +1,5 @@
+s = input()
+i = int(input())
+print(s[i - 1])
+print(s[0])
+print(s[-1])
