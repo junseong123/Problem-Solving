@@ -1,0 +1,9 @@
+a = []
+sum1 = 0
+sum2 = 0
+a = list(map(int, input().split()))
+sum1 = max(a) + min(a)
+a.remove(max(a))
+a.remove(min(a))
+sum2 = max(a) + min(a)
+print(abs(sum1 - sum2))
