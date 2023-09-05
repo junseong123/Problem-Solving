@@ -4,11 +4,11 @@ p = input()
 
 for i in range(3):
     if p[i] == "A":
-        y.append(min(x))
+        print(min(x), end=" ")
         x.remove(min(x))
     elif p[i] == "C":
-        y.append(max(x))
+        print(max(x), end=" ")
         x.remove(max(x))
     else:
-        y.append(*x)
-print(" ".join(map(str, y)))
+        b = x
+        print(b[0], end=" ")
