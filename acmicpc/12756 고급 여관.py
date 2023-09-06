@@ -9,5 +9,5 @@ if A[1] > 0:
     print("PLAYER A")
 elif 0 < B[1]:
     print("PLAYER B")
-elif A[1] == 0 and B[1] == 0:
+elif A[1] <= 0 and B[1] <= 0:
     print("DRAW")
