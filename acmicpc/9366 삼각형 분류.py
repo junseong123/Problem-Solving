@@ -1,15 +1,13 @@
 T = int(input())
 a = []
-for i in range(T):
-    a, b, c = map(int, input().split())
+for i in range(1, T + 1):
+    a, b, c = sorted(map(int, input().split()))
     if a == b == c:
-        print(f"Case #{i+1}: equilateral")
+        print(f"Case #{i}: equilateral")
     elif a == b or c == a or b == c:
-        print(f"Case #{i+1}: isosceles")
+        print(f"Case #{i}: isosceles")
     else:
-        if (a + b + c - max(a, b, c) - min(a, b, c)) ** 2 + min(a, b, c) ** 2 == max(
-            a, b, c
-        ) ** 2:
-            print(f"Case #{i+1}: scalene")
+        if b**2 + a**2 == c**2:
+            print(f"Case #{i}: scalene")
         else:
-            print(f"Case #{i+1}: invalid!")
+            print(f"Case #{i}: invalid!")
