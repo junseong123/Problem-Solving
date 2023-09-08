@@ -1,5 +1,6 @@
 a = []
 max = 0
+x, y = 0, 0
 for i in range(9):
     a.append(list(map(int, input().split())))
 
